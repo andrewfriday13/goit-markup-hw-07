@@ -49,11 +49,7 @@ header {
 span {
   color: var(--color-but);
 }
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -269,11 +265,7 @@ ul [href="tel:+380961111111"]:focus {
 .icon-tap:focus {
   fill: var(--color-but);
 }
-.list-item{
-  justify-content: center;
-position: relative;
-   
-}
+
 .list-buttoms {
   display: flex;
   justify-content: center;
@@ -367,48 +359,94 @@ background-color: var(--bg-svg);
   margin-bottom: 30px;
 
 }
-.section-title {
+.team__title {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
   color: var(--text);
   margin-bottom: 50px;
 }
-.section-work {
+.work {
   padding-top: 0;
 }
-.list-work {
+.work__list {
+  display: flex;
+  gap: 30px;
+}
+.work__title {
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--text);
+  margin-bottom: 50px;
+}
+/* Чим ми займаємось work START */
+.work__section {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}
+.work__item {
+  justify-content: center;
+  position: relative;
+
+}
+.work__name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: var(--background);
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+  text-transform: uppercase;
+}
+.work__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Чим ми займаємось work END */
+
+
+.team {
+  background-color: #f5f4fa;
+}
+.team__list {
   display: flex;
   gap: 30px;
 }
 
-.section-team {
-  background-color: #f5f4fa;
-}
-.list-team {
-  display: flex;
-  gap: 30px;
-}
-.section-team h3 {
+.team__name {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   padding-top: 30px;
   margin-bottom: 10px;
 }
-.section-team p {
+
+.team__profession{
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
   margin-bottom: 16px;
 }
-.social-team {
+.team__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.team__social {
   display: flex;
   gap: 10px;
   justify-content: center;
   padding-bottom: 30px;
 }
-.social-link {
+.team__link {
   display: flex;
   fill: var(--icon-color);
   width: 44px;
@@ -422,8 +460,8 @@ background-color: var(--bg-svg);
   transition-timing-function: var(--timing-function);
 }
 
- ul .social-link:hover,
- ul .social-link:focus{
+ .team__link:hover,
+ .team__link:focus{
   fill: var(--background);
   background-color: var(--color-but);
 }
@@ -460,7 +498,7 @@ background-color: var(--bg-svg);
   padding-top: 30px;
   padding-bottom: 20px;
 }
-.list-team > li {
+.team__info {
   background-color: var(--background);
   box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #00000033;
   border-radius: 0px 0px 4px 4px;
@@ -482,11 +520,14 @@ background-color: var(--bg-svg);
   width: 170px;
   height: 90px;
 }
-.clients h2{
+
+.clients__title {
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
   color: var(--text);
+  margin-bottom: 50px;
 }
-
-
 .clients-link {
  display: flex;
  border: 1px solid #AFB1B8;
@@ -560,22 +601,7 @@ visibility: hidden ;
   cursor: pointer;
   
 }
-.rute {
-  position: relative;
-}
-.name {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  color: var(--background);
-  background-color: rgba(47, 48, 58, 0.8);
-  width: 100%;
-  height: 70px;
-  text-transform: uppercase;
-}
+
 .team-thumb{
   position: relative;
   overflow: hidden;
@@ -611,6 +637,10 @@ li:hover .overlay{
   display: flex;
   align-items: center;
   gap: 12px;
+}
+.list-item {
+  justify-content: center;
+  position: relative;
 }
 .tg-btn{
   color: var(--background);
