@@ -134,7 +134,8 @@ ul .footer-link:focus {
 .footer-container {
   display: flex;
   align-items: baseline;
-justify-content: space-between;}
+justify-content: space-between;
+}
 .socaial-footer {
   display: flex;
   gap: 70px;
