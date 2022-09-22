@@ -319,7 +319,7 @@ ul [href="tel:+380961111111"]:focus {
 .buttom-cap:active {
   background-color: var(--active-but);
 }
-.skill {
+.skill__list {
   display: flex;
   gap: 30px;
 }
@@ -329,27 +329,27 @@ ul [href="tel:+380961111111"]:focus {
   line-height: 1.2;
   text-align: center;
 }
-.skill li {
+.skill__item {
   width: 270px;
   display: inline-block;
   gap: 10px;
 }
-.skill h3 {
+.skill__name {
   line-height: 1.1;
   font-size: 14px;
   margin-bottom: 10px;
 }
-.skill p {
+.skill__description {
   line-height: 1.7;
 }
 .skill-item{
   display: flex;
   gap: 30px;
 }
-.skill-icon{
+.skill__svg{
 background-color: var(--bg-svg);
 }
-.skill-list{
+.skill__icon{
   display: flex;
   background-color: var(--bg-svg);
   height: 120px;
