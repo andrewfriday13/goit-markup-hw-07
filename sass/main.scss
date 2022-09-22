@@ -1,3 +1,16 @@
- body{
-    background-color: ;
- }
+@import './utils/vars';
+@import'./utils/visually-hedden';
+
+@import'./base/base';
+@import'./base/reset';
+@import'./base/container';
+
+@import'./layouts/footer';
+@import'./layouts/header';
+@import'./layouts/hero';
+@import'./layouts/skill';
+@import'./layouts/work';
+@import'./layouts/team';
+@import'./layouts/clients';
+
+@import'./components/products';
