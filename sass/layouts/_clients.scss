@@ -38,15 +38,6 @@
     border-color: var(--color-but);
   }
   
-  ul &-link:hover &-icon,
-  ul &-link:focus &-icon {
-    fill: var(--color-but);
+
   }
-  
-  &-icon {
-    fill: currentColor;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: var(--timing-function);
-  }
-  }
+   
