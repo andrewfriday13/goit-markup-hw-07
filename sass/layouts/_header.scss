@@ -1,6 +1,7 @@
-
-.header {
+header{
   border-bottom: 1px solid #ececec;
+}
+.header {
   
   &-container {
     display: flex;
@@ -73,7 +74,7 @@ ul{
   align-items: center;
   gap: 50px;
   
-  & a {
+  & a{
     color: var(--color-p);
     letter-spacing: 0.02em;
     padding-top: 28px;
@@ -81,7 +82,9 @@ ul{
     font-weight: 500;
   }
 }
+
 .list-item {
   justify-content: center;
   position: relative;
 }
+

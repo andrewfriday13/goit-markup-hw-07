@@ -223,9 +223,10 @@ footer [href="https://goo.gl/maps/d5CcS2hFM6yTFQRFA"] {
   gap: 8px;
 }
 
-.header {
+header {
   border-bottom: 1px solid #ececec;
 }
+
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
