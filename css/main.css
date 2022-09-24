@@ -75,6 +75,216 @@ ul {
   padding: 0 15px 0 15px;
 }
 
+.btn-cap {
+  color: var(--background);
+  font-size: 16px;
+  width: 216px;
+  height: 50px;
+  background-color: var(--color-but);
+  border-radius: 4px;
+  border: 0;
+  letter-spacing: 0.06em;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
+.btn-cap:active {
+  background-color: var(--active-but);
+}
+.btn-close {
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+  -webkit-transition-property: fill;
+  transition-property: fill;
+}
+.btn-close:hover, .btn-close:focus {
+  fill: var(--color-but);
+}
+
+.modal-btn {
+  color: var(--background);
+  font-size: 16px;
+  width: 216px;
+  height: 50px;
+  background-color: var(--color-but);
+  border-radius: 4px;
+  border: 0;
+  letter-spacing: 0.06em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.list-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+.list-btn [type=button] {
+  height: 38px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border: 0;
+  font-size: 16px;
+  padding: 6px 22px;
+  cursor: pointer;
+  -webkit-transition-property: color, background-color, -webkit-box-shadow;
+  transition-property: color, background-color, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow;
+  transition-property: color, background-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+}
+.list-btn [type=button]:hover, .list-btn [type=button]:focus {
+  background-color: var(--active-but);
+  color: var(--background);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1019607843), 0px 1px 2px rgba(0, 0, 0, 0.0784313725), 0px 2px 2px rgba(0, 0, 0, 0.1215686275);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1019607843), 0px 1px 2px rgba(0, 0, 0, 0.0784313725), 0px 2px 2px rgba(0, 0, 0, 0.1215686275);
+}
+
+.tg-btn {
+  color: var(--background);
+  font-size: 16px;
+  width: 216px;
+  height: 50px;
+  background-color: var(--color-but);
+  border-radius: 4px;
+  border: 0;
+  letter-spacing: 0.06em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.icon-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  fill: var(--color-p);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+}
+.icon-contacts:hover .icon-tap, .icon-contacts:focus .icon-tap {
+  fill: var(--color-but);
+}
+.icon-tap {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+}
+.icon-tap:hover, .icon-tap:focus {
+  fill: var(--color-but);
+}
+.icon-unchecked {
+  opacity: 1;
+}
+.icon-unchecked:focus, .icon-checked:focus {
+  fill: var(--color-but);
+}
+.icon-checked {
+  opacity: 0;
+  -webkit-transition: opacity 250ms var(--timing-function);
+  transition: opacity 250ms var(--timing-function);
+  fill: var(--color-but);
+}
+.aggre-licence:checked + .icon-licence .icon-checked {
+  background-color: var(--active-but);
+  opacity: 1;
+}
+.aggre-licence:checked + .icon-licence .icon-unchecked {
+  fill: var(--active-but);
+}
+.icon-licence:checked .icon-unchecked {
+  background-color: var(--active-but);
+}
+.icon-licence:focus {
+  fill: var(--active-but);
+}
+
+.clients-icon {
+  fill: currentColor;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+}
+ul .clients-link:hover .clients-icon, ul .clients-link:focus .clients-icon {
+  fill: var(--color-but);
+}
+
+.form-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 14px;
+  -webkit-transition: fill 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
+}
+.form-icon:focus, .form-icon:hover {
+  border-color: var(--input-border);
+}
+.input:focus + .form-icon {
+  fill: var(--color-but);
+}
+
+.border {
+  border-right-color: rgb(238, 238, 238);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-bottom-color: rgb(238, 238, 238);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(238, 238, 238);
+  border-left-style: solid;
+  border-left-width: 1px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.border p {
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: left;
+  margin-left: 24px;
+}
+
 .footer {
   background-color: #2f303a;
   color: var(--background);
@@ -224,7 +434,9 @@ footer [href="https://goo.gl/maps/d5CcS2hFM6yTFQRFA"] {
 }
 
 header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 2px solid #ececec;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 .header-container {
@@ -275,7 +487,7 @@ header {
   height: 4px;
   background-color: var(--color-but);
   position: absolute;
-  bottom: -1px;
+  bottom: -5px;
   right: 0;
   border-radius: 2px;
 }
@@ -838,214 +1050,4 @@ textarea:focus {
           justify-content: center;
   background-color: var(--background);
   cursor: pointer;
-}
-
-.btn-cap {
-  color: var(--background);
-  font-size: 16px;
-  width: 216px;
-  height: 50px;
-  background-color: var(--color-but);
-  border-radius: 4px;
-  border: 0;
-  letter-spacing: 0.06em;
-  margin: 0 auto;
-  display: block;
-  cursor: pointer;
-}
-.btn-cap:active {
-  background-color: var(--active-but);
-}
-.btn-close {
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--timing-function);
-          transition-timing-function: var(--timing-function);
-  -webkit-transition-property: fill;
-  transition-property: fill;
-}
-.btn-close:hover, .btn-close:focus {
-  fill: var(--color-but);
-}
-
-.modal-btn {
-  color: var(--background);
-  font-size: 16px;
-  width: 216px;
-  height: 50px;
-  background-color: var(--color-but);
-  border-radius: 4px;
-  border: 0;
-  letter-spacing: 0.06em;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  cursor: pointer;
-}
-
-.list-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
-}
-.list-btn [type=button] {
-  height: 38px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  border: 0;
-  font-size: 16px;
-  padding: 6px 22px;
-  cursor: pointer;
-  -webkit-transition-property: color, background-color, -webkit-box-shadow;
-  transition-property: color, background-color, -webkit-box-shadow;
-  transition-property: color, background-color, box-shadow;
-  transition-property: color, background-color, box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--timing-function);
-          transition-timing-function: var(--timing-function);
-}
-.list-btn [type=button]:hover, .list-btn [type=button]:focus {
-  background-color: var(--active-but);
-  color: var(--background);
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1019607843), 0px 1px 2px rgba(0, 0, 0, 0.0784313725), 0px 2px 2px rgba(0, 0, 0, 0.1215686275);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1019607843), 0px 1px 2px rgba(0, 0, 0, 0.0784313725), 0px 2px 2px rgba(0, 0, 0, 0.1215686275);
-}
-
-.tg-btn {
-  color: var(--background);
-  font-size: 16px;
-  width: 216px;
-  height: 50px;
-  background-color: var(--color-but);
-  border-radius: 4px;
-  border: 0;
-  letter-spacing: 0.06em;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  cursor: pointer;
-  gap: 10px;
-}
-
-.icon-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
-  fill: var(--color-p);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--timing-function);
-          transition-timing-function: var(--timing-function);
-}
-.icon-contacts:hover .icon-tap, .icon-contacts:focus .icon-tap {
-  fill: var(--color-but);
-}
-.icon-tap {
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--timing-function);
-          transition-timing-function: var(--timing-function);
-}
-.icon-tap:hover, .icon-tap:focus {
-  fill: var(--color-but);
-}
-.icon-unchecked {
-  opacity: 1;
-}
-.icon-unchecked:focus, .icon-checked:focus {
-  fill: var(--color-but);
-}
-.icon-checked {
-  opacity: 0;
-  -webkit-transition: opacity 250ms var(--timing-function);
-  transition: opacity 250ms var(--timing-function);
-  fill: var(--color-but);
-}
-.aggre-licence:checked + .icon-licence .icon-checked {
-  background-color: var(--active-but);
-  opacity: 1;
-}
-.aggre-licence:checked + .icon-licence .icon-unchecked {
-  fill: var(--active-but);
-}
-.icon-licence:checked .icon-unchecked {
-  background-color: var(--active-but);
-}
-.icon-licence:focus {
-  fill: var(--active-but);
-}
-
-.clients-icon {
-  fill: currentColor;
-  -webkit-transition-property: fill;
-  transition-property: fill;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--timing-function);
-          transition-timing-function: var(--timing-function);
-}
-ul .clients-link:hover .clients-icon, ul .clients-link:focus .clients-icon {
-  fill: var(--color-but);
-}
-
-.form-icon {
-  position: absolute;
-  bottom: 11px;
-  left: 14px;
-  -webkit-transition: fill 250ms var(--timing-function);
-  transition: fill 250ms var(--timing-function);
-}
-.form-icon:focus, .form-icon:hover {
-  border-color: var(--input-border);
-}
-.input:focus + .form-icon {
-  fill: var(--color-but);
-}
-
-.border {
-  border-right-color: rgb(238, 238, 238);
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-bottom-color: rgb(238, 238, 238);
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-left-color: rgb(238, 238, 238);
-  border-left-style: solid;
-  border-left-width: 1px;
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-.border p {
-  font-size: 16px;
-  line-height: 1.9;
-  text-align: left;
-  margin-left: 24px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,9 @@
 header{
-  border-bottom: 1px solid #ececec;
+
+  border-bottom: 2px solid #ececec;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
 }
 .header {
   
@@ -48,7 +52,7 @@ header{
     height: 4px;
     background-color: var(--color-but);
     position: absolute;
-    bottom: -1px;
+    bottom: -5px;
     right: 0;
     border-radius: 2px;
   }
